@@ -4,20 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./features/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Inter:ital,opsz@0,14..32;1,14..32&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <div class="search-bar">
-          <img src="./images/icons/magnify.svg" alt="magnify icon" width="30px" />
-          <input type="text" name="search-bar" id="search-bar" />
+        <div class="left-content">
+          <div class="search-bar">
+            <img src="./images/icons/magnify.svg" alt="magnify icon" width="40px" />
+            <input type="text" name="search-bar" id="search-bar" />
+          </div>
+          <div class="profile">
+            <img src="./images/profil-img.jpg" alt="Profile image" width="100px" style="border-radius: 50%" />
+            <div class="comment">
+              <p class="small-text">Hi there,</p>
+              <p class="big-text">Rémi LESCURE (@ReMoOuZz)</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="notification">
+            <img src="./images/icons/bell.svg" alt="bell icon" width="30px" />
+            <img src="./images/profil-img.jpg" alt="profile image" width="50px" style="border-radius: 50%; border: 1px solid #1e3e62" />
+            <p>Rémi LESCURE</p>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
       </div>
-      <div class="nav"></div>
-      <div class="main-content"></div>
+      <div class="nav">
+        <div class="logo">
+          <img src="./images/icons/view-dashboard.svg" alt="dashboard icon" / >
+          <h1>Dashboard</h1>
+        </div>
+        <div class="user-section">
+          <div class="nav-item" id="home-nav-item">
+            <img src="./images/icons/home.svg" alt="home icon" />
+            <h2>Home</h2>
+          </div>
+          <div class="nav-item" id="profile-nav-item">
+            <img src="./images/icons/card-account-details-outline.svg" alt="profile icon" />
+            <h2>Profile</h2>
+          </div>
+          <div class="nav-item" id="messages-nav-item">
+            <img src="./images/icons/message-square.svg" alt="messages icon" />
+            <h2>Messages</h2>
+          </div>
+          <div class="nav-item" id="history-nav-item">
+            <img src="./images/icons/clock.svg" alt="history icon" />
+            <h2>History</h2>
+          </div>
+          <div class="nav-item" id="tasks-nav-item">
+            <img src="./images/icons/clipboard.svg" alt="tasks icon" />
+            <h2>Tasks</h2>
+          </div>
+          <div class="nav-item" id="communities-nav-item">
+            <img src="./images/icons/account-group.svg" alt="communities icon" />
+            <h2>Communities</h2>
+          </div>
+        </div>
+        <div class="tools-section">
+          <div class="nav-item">
+            <img src="./images/icons/cog-outline.svg" alt="settings icon" width="50px" />
+            <h2>Settings</h2>
+          </div>
+          <div class="nav-item">
+            <img src="./images/icons/tooltip-question.svg" alt="support icon" width="50px" />
+            <h2>Support</h2>
+          </div>
+          <div class="nav-item">
+            <img src="./images/icons/shield-check-outline.svg" alt="privacy icon" width="50px" />
+            <h2>Privacy</h2>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="item-container">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+        <div class="announcements-container">
+          <div class="announcement"></div>
+          <div class="announcement"></div>
+          <div class="announcement"></div>
+        </div>
+        <div class="trending-container">
+          <div class="trending"></div>
+          <div class="trending"></div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-socials">
+      <div class="contact">
+        <p>Visit my socials!</p>
+        <button id="close-button">&times;</button>
+      </div>
+      <div class="contact-icons">
+        <a href="https://github.com/ReMoOuZz" target="_blank" rel="noopener noreferrer"
+          ><img src="./images/icons/github.svg" alt="github icon" width="50px"
+        /></a>
+        <a href="https://www.linkedin.com/in/rémi-lescure-278754359" target="_blank" rel="noopener noreferrer"
+          ><img src="./images/icons/linkedin.svg" alt="linkedin icon" width="50px"
+        /></a>
+        <a href="https://x.com/ReMoOuZz" target="_blank" rel="noopener noreferrer"
+          ><img src="./images/icons/X_logo_2023.webp" alt="twitter icon" width="50px"
+        /></a>
+      </div>
     </div>
   </body>
 </html>
