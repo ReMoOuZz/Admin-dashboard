@@ -517,7 +517,7 @@ body {
     .trending-container {
         grid-column: 2 / 4;
         max-width: 500px;
-        margin-top: 1em;
+        margin-top: 1.2em;
     }
 
     .trending-content {
